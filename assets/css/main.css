@@ -1896,3 +1896,14 @@ body.is-preload #footer {
 .resume.image.main {
   margin-top: 0;
 }
+.weight {
+  list-style: none;
+  border-style: none;
+
+}
+.currentWeight {
+  width: 400px;
+  height: 500px;
+  font-size: 30px;
+  font-weight: bold;
+}

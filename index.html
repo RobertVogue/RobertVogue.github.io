@@ -3,6 +3,9 @@
 
 <head>
 	<title>Robert Vogtritter</title>
+	<audio id="music" loop>
+	<source src="images/Dua.mp3" type="audio/mpeg"/>
+	</audio>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css" />
@@ -12,7 +15,17 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
+<script>
+	var vid = document.getElementById("music");
 
+	function playVid() {
+	  vid.play();
+	}
+
+	function pauseVid() {
+	  vid.pause();
+	}
+	</script>
 <body class="is-preload">
 	<div id="wrapper">
 		<header id="header">
@@ -20,18 +33,25 @@
 				<div class="inner">
 					<h1>Robert Christian Dior Vogtritter</h1>
 					<h3>Full Stack Software Engineer</h3>
-					<h5>| JavaScript | Python | React | Redux | HTML5 | CSS3 | PSQL | OOP | TDD | Machine Learning |
+					<h5>| JavaScript | Python | React | Redux | HTML5 | CSS3 | PSQL | OOP | TDD |
+					<h3>DevOps Engineer</h3>
+					<h5>| Azure | AWS | Jenkins | Kubernetes | Helm | Prometheus | Ansible | Docker | Git Lab |
 					</h5>
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#intro">Intro</a></li>
 					<li><a href="#work">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
+					<li><a href="#intro">DevOps</a></li>
+					<li><a href="#skills">Web</a></li>
 					<li><a href="#about">Résumé</a></li>
 					<li><a href="#contact">Contact</a></li>
-
+				</ul>
+			</nav>
+			<nav>
+				<ul>
+					<button onclick="playVid()" type="button">Music</button>
+					<button onclick="pauseVid()" type="button">Pause</button><br>
 				</ul>
 			</nav>
 		</header>
@@ -39,19 +59,108 @@
 
 		<div id="main">
 			<article id="intro">
-				<h2 class="major">Intro</h2>
-				<span class="image main"><img src="images/phx.jpg" alt="" /></span>
-				<p>While part of the Human Resources team, I’ve built both interpersonal and organizational skills but I
-					missed the creative freedom that was inherent in development. In order to grasp my new-found love
-					from programming, I have worked hard to improve my skills in JavaScript, Python, Nodejs, React, and
-					more. </p>
-				<p>As a League of Legends patron for 8 years, I have learned so much about mechanics, teamwork, and the
-					ability to “stay cool.” The overall design of the game is not overwhelming and easy to use. Respect
-					the framework which gives the players complete control over their experience. </p>
-				<p>I am a contributor who loves to learn and share knowledge. I enjoy helping others understand
-					techniques I have used in development. This sharing of knowledge is powerful and efficient, I thrive
-					in a collaborative environment and actively seek opportunities to contribute. For this reason and
-					along with my skills, I know I will make a great addition to the team. </p>
+				<h2 class="major">DevOps Skills</h2>
+				<section class="skills-icons">
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-azure-plain"></i>
+							<span class="skill-text">Azure</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-amazonwebservices-original"></i>
+							<span class="skill-text">AWS</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-jenkins-line"></i>
+							<span class="skill-text">Jenkins</span>
+						</div>
+					</section>
+
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-groovy-plain"></i>
+							<span class="skill-text">Groovy</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-kubernetes-plain"></i>
+							<span class="skill-text">Kubernetes</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-nginx-original"></i>
+							<span class="skill-text">NGINX</span>
+						</div>
+
+					</section>
+
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-slack-plain"></i>
+							<span class="skill-text">Slack</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-digitalocean-plain"></i>
+							<span class="skill-text">DigitalOcean</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-googlecloud-plain"></i>
+							<span class="skill-text">Google Cloud</span>
+						</div>
+					</section>
+
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-bash-plain"></i>
+							<span class="skill-text">Bash</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-gitlab-plain"></i>
+							<span class="skill-text">GitLab</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-github-original"></i>
+							<span class="skill-text">GitHub</span>
+						</div>
+					</section>
+
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-visualstudio-plain"></i>
+							<span class="skill-text">VisualStudio</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-linux-plain"></i>
+							<span class="skill-text">Linux</span>
+						</div>
+
+						<div class="skill-container">
+							<i class="devicon devicon-git-plain"></i>
+							<span class="skill-text">Git</span>
+						</div>
+					</section>
+
+					<section class="skills-icons-sub">
+						<div class="skill-container">
+							<i class="devicon devicon-docker-plain"></i>
+							<span class="skill-text">Docker</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-ubuntu-plain"></i>
+							<span class="skill-text">Ubuntu</span>
+						</div>
+						<div class="skill-container">
+							<i class="devicon devicon-mysql-plain"></i>
+							<span class="skill-text">mysql</span>
+						</div>
+					</section>
+
+				</section>
+			</article>
+
+			<article id="weight">
+				<h2 class="major">Weight Progress</h2>
+				<div class="currentWeight">
+					230
+				</div>
 			</article>
 
 			<article class="box" id="work">
@@ -123,7 +232,7 @@
 				</ul>
 			</article>
 			<article id="skills">
-				<h2 class="major">Skills</h2>
+				<h2 class="major"> Web Skills</h2>
 				<section class="skills-icons">
 					<section class="skills-icons-sub">
 						<div class="skill-container">
@@ -247,6 +356,7 @@
 
 			<article id="contact">
 				<h2 class="major">Contact</h2>
+				<h5>Due to ongoing spam, message field has been disabled. </h5>
 				<form action="https://formspree.io/f/meqvegbo" method="POST">
 					<div class="fields">
 						<div class="field half">
@@ -607,7 +717,7 @@
 								class="label">Linkedin</span></a>
 					</li>
 				</ul>
-				<p class="copyright">&copy; RobertVogtritter | Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+
 			</footer>
 
 		</div>
